@@ -1,0 +1,16 @@
+<table class="table">
+    <tbody>
+        <tr *ngFor='let post of posts'>
+            <th>{{post.key}}</th>
+            <th>{{post.title}}</th>
+            <th>{{post.answerA}}</th>
+            <th>{{post.answerB}}</th>
+            <th>{{post.category}}</th>
+            <th>{{post.creationDate}}</th>
+            <th>{{post.creator}}</th>
+            <th>{{post.description}}</th>
+            <th>{{post.finished}}</th>
+            <button (click)="goTo(post.key)">show detail</button>
+        </tr>
+    </tbody>
+</table>
